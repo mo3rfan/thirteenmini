@@ -1,0 +1,17 @@
+# FreeCAD temporary files
+*.FCStd1
+*.FCStd2
+*.FCBak
+*.lock
+
+# Thumbnails
+/thumbnails/*.png
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+.venv_uv/

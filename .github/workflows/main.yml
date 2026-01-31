@@ -1,0 +1,33 @@
+name: Generate STL and Screenshots
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '13mini.FCStd'
+      - '.github/workflows/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v6
+
+    - name: Run FreeCAD script
+      run: |
+        docker run --rm -v ${{ github.workspace }}:/data amrit3701/freecad-cli:latest FreeCADCmd /data/.github/workflows/export.py /data/13mini.FCStd
+
+    - name: Generate Screenshots from STL
+      run: |
+        sudo apt-get update && sudo apt-get install -y libgl1 xvfb
+        pip install pyvista vtk
+        xvfb-run -a python .github/workflows/render_stl.py dist/13mini.stl images/
+
+    - name: Commit and push changes
+      uses: stefanzweifel/git-auto-commit-action@v7
+      with:
+        commit_message: "feat: Add generated STL and screenshots"
+        file_pattern: "dist/*.stl images/*.png"
+
