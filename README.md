@@ -1,5 +1,7 @@
 I did this iPhone 13 mini 3D model in [FreeCAD](https://www.freecad.org/) mostly as a learning exercise.
 
+Click [here](dist/13mini.stl) to preview the STL in Github.
+
 | Front | Top | Side | Isometric |
 |---|---|---|---|
 | <img src="images/screenshot_front.png" width="200"/> | <img src="images/screenshot_top.png" width="200"/> | <img src="images/screenshot_side.png" width="200"/> | <img src="images/screenshot_iso.png" width="200"/> |
