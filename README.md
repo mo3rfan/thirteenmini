@@ -2,6 +2,8 @@ I did this iPhone 13 mini 3D model in [FreeCAD](https://www.freecad.org/) mostly
 
 Click [here](dist/13mini.stl) to preview the STL in Github.
 
+[![Generate STL and Screenshots](https://github.com/mo3rfan/thirteenmini/actions/workflows/main.yml/badge.svg)](https://github.com/mo3rfan/thirteenmini/actions/workflows/main.yml)
+
 | Front | Top | Side | Isometric |
 |---|---|---|---|
 | <img src="images/screenshot_front.png" width="200"/> | <img src="images/screenshot_top.png" width="200"/> | <img src="images/screenshot_side.png" width="200"/> | <img src="images/screenshot_iso.png" width="200"/> |
